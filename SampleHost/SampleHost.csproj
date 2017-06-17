@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\magic.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\_framework\asmjs\dna.asm.js" />
+    <EmbeddedResource Include="wwwroot\_framework\asmjs\dna.js" />
+    <EmbeddedResource Include="wwwroot\_framework\asmjs\dna.js.mem" />
+    <EmbeddedResource Include="wwwroot\_framework\asmjs\dna.wasm" />
+    <EmbeddedResource Include="wwwroot\_framework\Blazor.Runtime.js" />
+    <EmbeddedResource Include="wwwroot\_framework\emsdk-browser.js" />
+    <EmbeddedResource Include="wwwroot\_framework\encoding.js" />
+    <EmbeddedResource Include="wwwroot\_framework\wasm\dna.js" />
+    <EmbeddedResource Include="wwwroot\_framework\wasm\dna.wasm" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>
